@@ -15,9 +15,10 @@ let eta = parseInt(prompt("inserisci la tua età"));
 let sconto = "nessuno";
 let prezzo_totale;
 
-while(isNaN(percorso) || isNaN(eta))
+// while(isNaN(percorso) || isNaN(eta))
+if(isNaN(percorso) || isNaN(eta))
 {
-    alert("c'è stato un errore nell'inserimento, ritenta")
+    alert("c'è stato un errore nell'inserimento, ritenta");
     percorso = parseFloat(prompt("inserisci la distanza che vuoi percorrere"));
     eta = parseInt(prompt("inserisci la tua età"));
 }
